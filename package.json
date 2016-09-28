@@ -1,0 +1,18 @@
+{
+  "name": "po-box",
+  "version": "0.0.1",
+  "description": "Extract PO Boxes from a text string ",
+  "main": "dist/pobox.js",
+  "scripts": {
+    "test": "node test.js",
+    "package": "rollup src/main.js --output dist/pobox.js --format cjs"
+  },
+  "author": "Rowan Winsemius <rowanwins@yahoo.com.au>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "rollup": "^0.36.0",
+    "rollup-plugin-babel": "^2.6.1",
+    "tape": "^4.6.0"
+  }
+}
