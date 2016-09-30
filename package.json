@@ -1,6 +1,6 @@
 {
   "name": "po-box",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Extract PO Boxes from a text string ",
   "browser": "dist/pobox.browser.js",
   "main": "dist/pobox.js",

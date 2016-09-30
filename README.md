@@ -13,7 +13,7 @@ pobox provides 2 methods
 `extractPoBox(addressString)` returns an object containing various information 
 
 ````
-var pobox = require('pobox');
+var pobox = require('po-box');
 var addressString = "PO BOX 123, Main St, City, Country"
 pobox.extractPoBox(addressString);
 // returns {
@@ -27,7 +27,7 @@ pobox.extractPoBox(addressString);
 `containsPoBox(addressString)` simply returns true or false
 
 ````
-var pobox = require('pobox');
+var pobox = require('po-box');
 var addressString = "PO BOX 123, Main St, City, Country"
 pobox.containsPoBox(addressString);
 // returns true
