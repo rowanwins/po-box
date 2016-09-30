@@ -2,10 +2,17 @@
   "name": "po-box",
   "version": "0.0.1",
   "description": "Extract PO Boxes from a text string ",
+  "browser": "dist/pobox.browser.js",
   "main": "dist/pobox.js",
+  "jsnext:main": "src/main.js",
+  "jspm": {
+    "registry": "npm",
+    "format": "es6",
+    "main": "src/main.js"
+  },
   "scripts": {
     "test": "node test.js",
-    "package": "rollup src/main.js --output dist/pobox.js --format cjs"
+    "package": "rollup src/main.js -o dist/pobox.browser.js -f iife -n pobox && rollup src/main.js -o dist/pobox.js -f cjs"
   },
   "author": "Rowan Winsemius <rowanwins@yahoo.com.au>",
   "license": "MIT",
@@ -14,5 +21,18 @@
     "rollup": "^0.36.0",
     "rollup-plugin-babel": "^2.6.1",
     "tape": "^4.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rowanwins/po-box/issues"
+  },
+  "keywords": [
+    "po box",
+    "postal",
+    "post office box"
+  ],
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rowanwins/po-box.git"
   }
 }

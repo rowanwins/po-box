@@ -1,6 +1,5 @@
+(function (exports) {
 'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
 
 var pattern = / *(?:p\.?\s*o\.?|(post|postal)\s+(office|))(\s+)?(?:box|[0-9]*)? *(number|num|no)? *\d+/igm;
 
@@ -41,3 +40,5 @@ function extractPoBox(string){
 
 exports.containsPoBox = containsPoBox;
 exports.extractPoBox = extractPoBox;
+
+}((this.pobox = this.pobox || {})));
